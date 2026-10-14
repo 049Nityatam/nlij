@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portfolio - นางสาวนิยตา หอมเหล็ก</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Sarabun & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Sarabun', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        rose: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-rose-100 selection:text-rose-900">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/80">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-lg text-rose-600 tracking-tight flex items-center gap-2">
+                <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                Academic Portfolio
+            </a>
+            <nav class="hidden sm:flex space-x-6 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-rose-600 transition-colors">เกี่ยวกับ</a>
+                <a href="#personal" class="hover:text-rose-600 transition-colors">ข้อมูลส่วนตัว</a>
+                <a href="#education" class="hover:text-rose-600 transition-colors">การศึกษา</a>
+                <a href="#skills" class="hover:text-rose-600 transition-colors">ทักษะ</a>
+                <a href="#experience" class="hover:text-rose-600 transition-colors">ประสบการณ์</a>
+                <a href="#contact" class="hover:text-rose-600 transition-colors">ติดต่อ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Hero / About Section -->
+        <section id="about" class="pt-4">
+            <div class="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-slate-200/80 relative overflow-hidden flex flex-col md:flex-row items-center gap-8">
+                <div class="absolute -top-12 -right-12 w-48 h-48 bg-rose-50 rounded-full blur-2xl -z-10"></div>
+                
+                <!-- Profile Image Frame -->
+                <div class="w-44 h-44 md:w-52 md:h-52 rounded-2xl overflow-hidden shrink-0 border-4 border-rose-100 shadow-md relative group bg-slate-100">
+                    <img src="profile.jpg" 
+                         alt="นางสาวนิยตา หอมเหล็ก" 
+                         class="w-full h-full object-cover object-top"
+                         onerror="this.onerror=null; this.src='รูป22.jpg';">
+                </div>
+
+                <div class="space-y-3 text-center md:text-left flex-1">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-xs font-semibold uppercase tracking-wider mb-2">
+                        <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+                        นักศึกษาปริญญาตรี
+                    </span>
+                    
+                    <h1 class="text-3xl md:text-4xl font-bold text-slate-900">
+                        นางสาวนิยตา หอมเหล็ก[cite: 9]
+                    </h1>
+                    
+                    <p class="text-rose-600 font-semibold text-lg">
+                        สาขาวิชาสาธารณสุขชุมชน[cite: 9]
+                    </p>
+
+                    <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+                        วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น[cite: 9]<br>
+                        คณะสาธารณสุขศาสตร์และสหเวชศาสตร์ สถาบันพระบรมราชชนก กระทรวงสาธารณสุข[cite: 9]
+                    </p>
+
+                    <!-- Quote -->
+                    <div class="pt-2">
+                        <p class="text-xs md:text-sm italic text-slate-500 bg-slate-50 p-3 rounded-xl border border-slate-100 inline-block">
+                            💬 คติประจำใจ: "<span class="text-slate-700 font-medium">อย่าทิ้งความฝันเพียงเพราะเราไม่มีเพื่อน</span>"[cite: 9]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Info & Life Style Section -->
+        <section id="personal">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="p-2 bg-rose-100 text-rose-700 rounded-lg">
+                    <i data-lucide="user" class="w-5 h-5"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-900">ข้อมูลส่วนตัว & ไลฟ์สไตล์</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- General Info Card -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                    <h3 class="font-bold text-slate-900 text-lg flex items-center gap-2">
+                        <i data-lucide="smile" class="w-5 h-5 text-rose-500"></i> ข้อมูลทั่วไป
+                    </h3>
+                    <div class="grid grid-cols-2 gap-3 text-sm">
+                        <div class="bg-slate-50 p-3 rounded-xl">
+                            <span class="text-slate-400 block text-xs">อายุ</span>
+                            <span class="font-bold text-slate-800">19 ปี</span>[cite: 9]
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-xl">
+                            <span class="text-slate-400 block text-xs">กรุ๊ปเลือด</span>
+                            <span class="font-bold text-rose-600">O</span>[cite: 9]
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-xl">
+                            <span class="text-slate-400 block text-xs">ส่วนสูง / น้ำหนัก</span>
+                            <span class="font-bold text-slate-800">159 ซม. / 63 กก.</span>[cite: 9]
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-xl">
+                            <span class="text-slate-400 block text-xs">สีที่ชอบ</span>
+                            <span class="font-bold text-slate-800">สีชมพู, สีแดง</span>[cite: 9]
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interests & Goals Card -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                    <h3 class="font-bold text-slate-900 text-lg flex items-center gap-2">
+                        <i data-lucide="heart" class="w-5 h-5 text-rose-500"></i> สิ่งที่ชอบ & เป้าหมาย
+                    </h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="compass" class="w-4 h-4 text-rose-500 shrink-0 mt-1"></i>
+                            <div>
+                                <span class="text-slate-500 text-xs block">กิจกรรมที่ชอบ</span>
+                                <span class="font-medium text-slate-800">เดินเที่ยว</span>[cite: 9]
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="utensils" class="w-4 h-4 text-rose-500 shrink-0 mt-1"></i>
+                            <div>
+                                <span class="text-slate-500 text-xs block">ของโปรด</span>
+                                <span class="font-medium text-slate-800">กล้วย, ข้าวมันไก่, หม่าล่า</span>[cite: 9]
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="target" class="w-4 h-4 text-rose-500 shrink-0 mt-1"></i>
+                            <div>
+                                <span class="text-slate-500 text-xs block">เป้าหมายในชีวิต</span>
+                                <span class="font-medium text-slate-800">อยากรวย มีงานที่มั่นคง</span>[cite: 9]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Timeline -->
+        <section id="education">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="p-2 bg-rose-100 text-rose-700 rounded-lg">
+                    <i data-lucide="book-open" class="w-5 h-5"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-900">ประวัติการศึกษา</h2>[cite: 9]
+            </div>
+
+            <div class="relative pl-6 space-y-6 before:absolute before:left-2.5 before:top-3 before:bottom-3 before:w-0.5 before:bg-slate-200">
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-rose-600 ring-4 ring-white"></div>
+                    <div class="bg-white p-6 rounded-2xl border border-rose-200 shadow-sm">
+                        <span class="inline-block px-2.5 py-0.5 bg-rose-100 text-rose-800 rounded text-xs font-semibold mb-2">ปัจจุบัน</span>[cite: 9]
+                        <h3 class="text-lg font-bold text-slate-900">ระดับปริญญาตรี</h3>[cite: 9]
+                        <p class="text-rose-600 font-medium text-sm mt-1">สาขาวิชาสาธารณสุขชุมชน</p>[cite: 9]
+                        <p class="text-slate-600 text-sm mt-1">วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น</p>[cite: 9]
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-300 ring-4 ring-white group-hover:bg-rose-50
